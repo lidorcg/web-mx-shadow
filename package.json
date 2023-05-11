@@ -1,0 +1,12 @@
+{
+  "name": "web-mx-shadow",
+  "version": "0.1.0",
+  "author": "Lidor Cohen <lidorcg@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "shadow-cljs": "^2.23.3"
+  },
+  "scripts": {
+    "start": "shadow-cljs watch :app"
+  }
+}
