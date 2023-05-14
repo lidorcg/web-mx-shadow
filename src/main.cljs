@@ -11,7 +11,9 @@
   (let [app-matrix (todo/matrix-build!)
         app-dom (tag-dom-create
                  (mget app-matrix :mx-dom))]
-    (gdom/appendChild root app-dom)))
+    (gdom/appendChild root app-dom)
+    (when-let [router-starter (mget app-matrix :router-starter)]
+      (router-starter))))
 
 ;; start is called by init and after code reloading finishes
 (defn ^:dev/after-load start []
